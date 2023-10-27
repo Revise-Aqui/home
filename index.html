@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revisão Textual - Sua Empresa</title>
+  <title> Revisão Textual - Sua Empresa</title>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,14 +14,15 @@
     footer { bottom: 0; width: 100%; background-color: #f1f1f1; }
     .w3-bar a:hover { transition: background-color 0.3s ease; }
     .contact-info { text-align: center; padding: 20px; }
+    .services-section{padding: 85px; }
     .info-steps, .how-it-works-container, .services-container { display: flex; justify-content: space-around; flex-wrap: wrap; padding: 20px; }
-    .step, .how-it-works-step, .service-card { text-align: center; width: 300px; margin: 10px; border: 1px solid #ccc; border-radius: 10px; padding: 10px; transition: transform 0.2s; }
+    .step, .how-it-works-step, .service-card, .how-works { text-align: center; width: 300px; margin: 10px; border: 1px solid #ccc; border-radius: 10px; padding: 10px; transition: transform 0.2s; }
     .step img, .how-it-works-step img, .service-card img { max-width: 40px; height: auto; border-bottom: 1px solid #ccc; border-radius: 10px 10px 0 0; }
     .step p, .how-it-works-step p, .service-description { margin: 10px 0; }
     .step a { text-decoration: none; color: white; background-color: #4CAF50; padding: 10px 20px; border-radius: 5px; }
     .step a:hover { background-color: #45a049; }
-    .step:hover, .how-it-works-step:hover, .service-card:hover { transform: scale(1.05); }
-    .how-it-works-title, .services-title { text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 30px; }
+    .step:hover, .how-it-works-step:hover, .service-card:hover, .how-works:hover { transform: scale(1.05); }
+    .how-it-works-title, .services-title { padding: 20px; text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 30px; }
     .services-intro {padding:50px 150px; text-align: center; font-size: 18px; margin-bottom: 40px; color: #444; }
     .testimonial-container { background-color: #f9f9f9; padding: 40px; display: flex; flex-direction: column; align-items: center; }
     .testimonial-header { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
@@ -50,65 +51,94 @@
       </div>
     </header>
 
-
-    <h1>Serviços que oferecemos</h1>
-
-<div class="services-section">
-    <!-- Aqui você pode repetir o .service-card para outros serviços -->
-    <div class="service-card">
-        <img src="path/to/your/image1.png" alt="Edição em Inglês">
-        <h3 class="service-title">Edição em Inglês</h3>
-        <div class="service-description">Envie com confiança...</div>
-        <a href="#" class="learn-more">Saber mais</a>
-    </div>
-</div>
-
-<h2>Como funciona</h2>
-
-<div class="how-it-works">
-    <!-- Aqui você pode repetir o .step-card para outras etapas -->
-    <div class="step-card">
-        <img src="path/to/your/image2.png" alt="Selecione o serviço">
-        <h3 class="step-title">Selecione o serviço</h3>
-        <div class="step-description">Selecione o serviço que você precisa...</div>
-    </div>
-</div>
-
-<h2>Por que os serviços de edição da Wiley?</h2>
-
-<div class="why-us">
-    <!-- Aqui você pode repetir o .reason-card para outras razões -->
-    <div class="reason-card">
-        <img src="path/to/your/image3.png" alt="Uma garantia de qualidade">
-        <h3 class="reason-title">Uma garantia de qualidade</h3>
-        <div class="reason-description">Você pode contar conosco...</div>
-    </div>
-</div>
-
     <div class="services-section">
-        <h2 class="services-title">Por que optar pelos nossos serviços de edição?</h2>
+        <h2 class="services-title">Serviços que oferecemos</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="revisaotextual.png" alt="Icone revisão textual">
+                <h3>Revisão textual</h3>
+                <div class="service-description">
+					Revisão acadêmica em português: correção ortográfica, ajustes morfossintáticos, estilo, coerência e adequação à linguagem acadêmica formal.                </div>
+            </div>
+            <div class="service-card">
+                <img src="./traducao.png" alt="iconetraducao">
+                <h3>Tradução</h3>
+                <div class="service-description">
+                    Traduções precisas do português para o inglês e espanhol, revisadas por nativos em inglês.
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="./consultoria.png" alt="icone consultoria">
+                <h3>Consultoria</h3>
+                <div class="service-description">
+                    Prestamos assistência especializada na organização, análise de dados e elaboração de projetos acadêmicos, garantindo clareza e aderência às normas acadêmicas. 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="how-works" style="width: 600px; margin: 50px auto; font-family: Arial, sans-serif;">
+      <h2 style="text-align: center;">Como funciona</h2>
+      
+      <div style="display: flex; justify-content: space-between; gap: 20px;">
+          
+          <!-- Passo 1 -->
+          <div style="flex: 1; text-align: center;">
+              <div style="font-size: 24px; margin-bottom: 10px;">1</div>
+              <img src="./img/selecionar 1.png" alt="Ícone do Passo 1" style="width: 60px; margin-bottom: 15px;">
+              <p>Selecione o serviço que você precisa</p>
+          </div>
+  
+          <!-- Passo 2 -->
+          <div style="flex: 1; text-align: center;">
+              <div style="font-size: 24px; margin-bottom: 10px;">2</div>
+              <img src="./img/carregar 2.png" alt="Ícone do Passo 2" style="width: 60px; margin-bottom: 15px;">
+              <p>Carregue seu manuscrito e preencha os detalhes do pedido</p>
+          </div>
+  
+      </div>
+  
+      <div style="display: flex; justify-content: space-between; gap: 20px; margin-top: 40px;">
+          
+          <!-- Passo 3 -->
+          <div style="flex: 1; text-align: center;">
+              <div style="font-size: 24px; margin-bottom: 10px;">3</div>
+              <img src="./img/selecionar 1.png" alt="Ícone do Passo 3" style="width: 60px; margin-bottom: 15px;">
+              <p>Trabalhe com nossos especialistas na área para atender sua solicitação</p>
+          </div>
+  
+          <!-- Passo 4 -->
+          <div style="flex: 1; text-align: center;">
+              <div style="font-size: 24px; margin-bottom: 10px;">4</div>
+              <img src="./img/pagamento.png" alt="Ícone do Passo 4" style="width: 60px; margin-bottom: 15px;">
+              <p>Conclua o pagamento e baixe seus arquivos finais</p>
+          </div>
+        </div>
+  </div>
+  
+
+ <h2 class="services-title">Por que optar pelos nossos serviços de edição?</h2>
         <p class="services-intro">Our comprehensive and professional article preparation and promotion services save you time, increase your chances of acceptance, and help maximize the impact of your research.</p>
         <div class="services-container">
             <div class="service-card">
-                <img src="./images.png" alt="Quality Guarantee Icon">
-                <h3>A Quality Guarantee</h3>
+                <img src="./images.png" alt="icone de garantia de qualidade">
+                <h3>Garantia de Qualidade</h3>
                 <div class="service-description">
-                    You can count on us for excellence, expertise, and responsiveness in all our services. We offer free re-editing or a money-back guarantee if your edited manuscript is rejected for language-quality.
+                    Garantimos excelência e rapidez em todos os nossos serviços, com reedição grátis ou reembolso total se o seu manuscrito editado for rejeitado por falhas na qualidade do idioma.
                 </div>
             </div>
             <div class="service-card">
                 <img src="./images.png" alt="On-Time Delivery Icon">
-                <h3>On-Time Delivery</h3>
+                <h3>Entrega pontual</h3>
                 <div class="service-description">
-                    We deliver on time, every time. If there is any delay, we will refund the fee for your order.
-                </div>
+                    Nos comprometemos com a pontualidade, assegurando a entrega de todos os pedidos dentro do prazo estipulado e com a qualidade esperada.                </div>
             </div>
             <div class="service-card">
                 <img src="./images.png" alt="Confidentiality Icon">
-                <h3>Confidentiality</h3>
+                <h3>Confidencialidade</h3>
                 <div class="service-description">
-                    We adhere to a strict privacy policy that guarantees 100% confidentiality and allows researchers worldwide to submit their work to us with complete confidence.
-                </div>
+                    Mantemos uma política de privacidade rigorosa, garantindo confidencialidade total e permitindo que pesquisadores de todo o mundo enviem seus trabalhos para nós com confiança.                </div>
             </div>
         </div>
     </div>

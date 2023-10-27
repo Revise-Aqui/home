@@ -1,112 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revisão Textual - Sua Empresa</title>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body, h1 {
-            font-family: "Raleway", Arial, sans-serif;
-        }
-        h1 {
-            letter-spacing: 6px;
-            font-weight: 600;
-        }
-        .w3-row-padding img {
-            margin-bottom: 12px;
-        }
-        .w3-bar-item {
-            text-decoration: none;
-        }
-        footer {
-            bottom: 0;
-            width: 100%;
-            background-color: #f1f1f1;
-        }
-        .info-steps {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px;
-            margin: 20px 0;
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-        .step {
-            text-align: center;
-        }
-        .step img {
-            width: 50px;
-            height: 50px;
-        }
-        .step p {
-            margin-top: 10px;
-            font-size: 16px;
-            color: #555;
-        }
-        .w3-bar a:hover {
-            transition: background-color 0.3s ease;
-        }
-        .contact-info {
-            text-align: center;
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revisão Textual - Sua Empresa</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ775/eF9gMf9ATKxIep9tiCxS/Z9fNfMt+D" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,600">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body, h1 { font-family: "Raleway", Arial, sans-serif; }
+    h1 { letter-spacing: 6px; font-weight: 600; }
+    footer { bottom: 0; width: 100%; background-color: #f1f1f1; }
+    .w3-bar a:hover { transition: background-color 0.3s ease; }
+    .contact-info { text-align: center; padding: 20px; }
+    .info-steps { display: flex; justify-content: space-around; flex-wrap: wrap; padding: 20px; }
+    .step { text-align: center; width: 300px; margin: 10px; border: 1px solid #ccc; border-radius: 10px; padding: 10px; transition: transform 0.2s; }
+    .step img { max-width: 100px; width: 50%; height: auto; border-bottom: 1px solid #ccc; border-radius: 10px 10px 0 0;}
+    .step p { margin: 10px 0; }
+    .step a { text-decoration: none; color: white; background-color: #4CAF50; padding: 10px 20px; border-radius: 5px; }
+    .step a:hover { background-color: #45a049; }
+    .step:hover { transform: scale(1.05); }
+  </style>
 </head>
 <body>
 
-    <div class="w3-content" style="max-width:1500px">
-        <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
-            <h1 class="w3-xlarge">REVISÃO DE TEXTOS</h1>
-            <h1>Sua Empresa</h1>
-            <div class="w3-padding-32">
-                <div class="w3-bar w3-border">
-                    <a href="#" class="w3-bar-item w3-button">Serviços</a>
-                    <a href="#" class="w3-bar-item w3-button w3-light-grey">Como funciona?</a>
-                    <a href="https://wa.me/5527992773767?text=Olá,%20eu%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços" target="_blank" class="w3-bar-item w3-button">Contato</a>
-                </div>
-            </div>
-        </header>
+  <div class="w3-content" style="max-width:1500px">
+    <!-- Conteúdo vai aqui -->
+  </div>
 
-        <div class="info-steps">
-            <div class="step">
-                <img src="path_to_your_image" alt="Cliente Envia Texto">
-                <p>1. O cliente envia o texto</p>
-            </div>
-            <div class="step">
-                <img src="path_to_your_image" alt="Análise e Orçamento">
-                <p>2. Analisamos e fazemos o orçamento</p>
-            </div>
-            <div class="step">
-                <img src="path_to_your_image" alt="Aprovação do Cliente">
-                <p>3. Aprovação do cliente</p>
-            </div>
-            <div class="step">
-                <img src="path_to_your_image" alt="Pagamento">
-                <p>4. Pagamento</p>
-            </div>
-            <div class="step">
-                <img src="path_to_your_image" alt="Entrega">
-                <p>5. Entrega</p>
-            </div>
-        </div>
-    </div>
-
-    <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
-        <div class="contact-info">
-            <p>Para mais informações, entre em contato conosco:</p>
-            <p>Email: exemplo@empresa.com | Telefone: (XX) XXXX-XXXX</p>
-        </div>
-        <a href="https://www.facebook.com" class="fa fa-facebook-official w3-hover-opacity" aria-hidden="true"></a>
-        <a href="https://www.instagram.com" class="fa fa-instagram w3-hover-opacity" aria-hidden="true"></a>
-        <a href="https://www.linkedin.com" class="fa fa-linkedin w3-hover-opacity" aria-hidden="true"></a>
-        <a href="https://twitter.com" class="fa fa-twitter w3-hover-opacity" aria-hidden="true"></a>
-        <p>Desenvolvido com <a href="https://codelsa.github.io/" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-    </footer>
+  <!-- Optional Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+abtDEZTVIKWn" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-zBq6M36u4fQu4xNLz0DhMIZMCZA4GzCp1C3DQpooeH/Spq1iLUMT1eV1C9dH7xj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3sA7fjwK8w6Lep77Lp6fM2zgtwJ9gFfS4Q3S2X8JFmK02a8wQUL3" crossorigin="anonymous"></script>
 
 </body>
 </html>

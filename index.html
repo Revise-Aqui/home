@@ -14,18 +14,29 @@
     footer { bottom: 0; width: 100%; background-color: #f1f1f1; }
     .w3-bar a:hover { transition: background-color 0.3s ease; }
     .contact-info { text-align: center; padding: 20px; }
-    .info-steps, .how-it-works-container { display: flex; justify-content: space-around; flex-wrap: wrap; padding: 20px; }
-    .step, .how-it-works-step { text-align: center; width: 300px; margin: 10px; border: 1px solid #ccc; border-radius: 10px; padding: 10px; transition: transform 0.2s; }
-    .step img, .how-it-works-step img { max-width: 40px; height: auto; border-bottom: 1px solid #ccc; border-radius: 10px 10px 0 0; }
-    .step p, .how-it-works-step p { margin: 10px 0; }
+    .info-steps, .how-it-works-container, .services-container { display: flex; justify-content: space-around; flex-wrap: wrap; padding: 20px; }
+    .step, .how-it-works-step, .service-card { text-align: center; width: 300px; margin: 10px; border: 1px solid #ccc; border-radius: 10px; padding: 10px; transition: transform 0.2s; }
+    .step img, .how-it-works-step img, .service-card img { max-width: 40px; height: auto; border-bottom: 1px solid #ccc; border-radius: 10px 10px 0 0; }
+    .step p, .how-it-works-step p, .service-description { margin: 10px 0; }
     .step a { text-decoration: none; color: white; background-color: #4CAF50; padding: 10px 20px; border-radius: 5px; }
     .step a:hover { background-color: #45a049; }
-    .step:hover, .how-it-works-step:hover { transform: scale(1.05); }
-    .how-it-works-title { text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 30px; }
+    .step:hover, .how-it-works-step:hover, .service-card:hover { transform: scale(1.05); }
+    .how-it-works-title, .services-title { text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 30px; }
+    .services-intro { text-align: center; font-size: 18px; margin-bottom: 40px; color: #444; }
+    .testimonial-container { background-color: #f9f9f9; padding: 40px; display: flex; flex-direction: column; align-items: center; }
+    .testimonial-header { font-size: 28px; font-weight: bold; margin-bottom: 20px; }
+    .testimonial-content { width: 60%; background: #ffffff; padding: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); position: relative; }
+    .testimonial-quote { font-style: italic; font-size: 18px; }
+    .testimonial-author { margin-top: 20px; font-weight: bold; }
+    .testimonial-detail { font-size: 14px; color: #777; }
+    .arrow { width: 40px; height: 40px; background-color: #ddd; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: absolute; top: 50%; transform: translateY(-50%); cursor: pointer; }
+    .arrow-left { left: -60px; }
+    .arrow-right { right: -60px; }
+    .start-btn { margin-top: 40px; padding: 10px 20px; background-color: #007bff; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s; }
+    .start-btn:hover { background-color: #0056b3; }
   </style>
 </head>
 <body>
-
   <div class="w3-content" style="max-width:1500px">
     <header class="w3-panel w3-center w3-opacity" style="padding:128px 16px">
       <h1 class="w3-xlarge">REVISÃO DE TEXTOS</h1>
@@ -39,43 +50,58 @@
       </div>
     </header>
 
-    <div class="how-it-works-container">
-        <h2 class="how-it-works-title">How it Works</h2>
-        <div class="how-it-works-step">
-            <img src="./images.png" alt="Icon 1">
-            <p>Select the service<br>you need</p>
-        </div>
-        <div class="how-it-works-step">
-            <img src="./images.png" alt="Icon 2">
-            <p>Upload your manuscript and<br>complete the order details</p>
-        </div>
-        <div class="how-it-works-step">
-            <img src="./images.png" alt="Icon 3">
-            <p>Work with our subject-area<br>expert(s) to fulfil your request</p>
-        </div>
-        <div class="how-it-works-step">
-            <img src="./images.png" alt="Icon 4">
-            <p>Complete payment and download<br>your final files</p>
+    <div class="services-section">
+        <h2 class="services-title">Why Our Editing Services?</h2>
+        <p class="services-intro">Our comprehensive and professional article preparation and promotion services save you time, increase your chances of acceptance, and help maximize the impact of your research.</p>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="quality-icon.png" alt="Quality Guarantee Icon">
+                <h3>A Quality Guarantee</h3>
+                <div class="service-description">
+                    You can count on us for excellence, expertise, and responsiveness in all our services. We offer free re-editing or a money-back guarantee if your edited manuscript is rejected for language-quality.
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="time-icon.png" alt="On-Time Delivery Icon">
+                <h3>On-Time Delivery</h3>
+                <div class="service-description">
+                    We deliver on time, every time. If there is any delay, we will refund the fee for your order.
+                </div>
+            </div>
+            <div class="service-card">
+                <img src="privacy-icon.png" alt="Confidentiality Icon">
+                <h3>Confidentiality</h3>
+                <div class="service-description">
+                    We adhere to a strict privacy policy that guarantees 100% confidentiality and allows researchers worldwide to submit their work to us with complete confidence.
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="info-steps">
-      <div class="step"><img src="./images.png" alt="Cliente Envia Texto"><p>1. O cliente envia o texto</p></div>
-      <div class="step"><img src="./images.png" alt="Análise e Orçamento"><p>2. Analisamos e fazemos o orçamento</p></div>
-      <div class="step"><img src="./images.png" alt="Aprovação do Cliente"><p>3. Aprovação do cliente</p></div>
-      <div class="step"><img src="./images.png" alt="Pagamento"><p>4. Pagamento</p></div>
-      <div class="step"><img src="./images.png" alt="Entrega"><p>5. Entrega</p></div>
+    <div class="testimonial-container">
+        <h2 class="testimonial-header">O que nossos clientes dizem</h2>
+        <div class="testimonial-content">
+            <div class="arrow arrow-left"><i class="fa fa-angle-left"></i></div>
+            <p class="testimonial-quote">"Este é um dos melhores serviços de revisão que já utilizei. Meu artigo foi aceito sem nenhuma correção. Estou muito satisfeito!"</p>
+            <h4 class="testimonial-author">Dr. João Silva</h4>
+            <p class="testimonial-detail">Professor da Universidade de São Paulo</p>
+            <div class="arrow arrow-right"><i class="fa fa-angle-right"></i></div>
+        </div>
+        <a href="#" class="start-btn">Comece agora</a>
     </div>
+    
+    <footer class="w3-container w3-padding-64 w3-light-grey w3-center">
+      <div class="contact-info">
+        <h4>Contact Us</h4>
+        <p><i class="fa fa-envelope-o"></i> email@example.com</p>
+        <p><i class="fa fa-phone"></i> +55 27 99277-3767</p>
+        <p><i class="fa fa-map-marker"></i> Rua da Sua Empresa, 123</p>
+      </div>
+      <div class="w3-xlarge w3-section">
+        <a href="#" class="w3-hover-opacity"><i class="fa fa-instagram"></i></a>
+      </div>
+      <p>Copyright © 2023 by Sua Empresa. All rights reserved.</p>
+    </footer>
   </div>
-
-  <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large">
-    <div class="contact-info">
-      <p>Para mais informações, entre em contato conosco:</p>
-      <p>Email: contatoreviseaqui@gmail.com | Telefone: (27) 99277-3767</p>
-    </div>
-       <a href="https://www.instagram.com/revise__aqui/" class="fa fa-instagram w3-hover-opacity" aria-hidden="true"></a>
-    <p>Desenvolvido com <a href="https://codelsa.github.io/" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  </footer>
-
 </body>
 </html>
